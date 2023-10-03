@@ -1,10 +1,11 @@
-require('dotenv').config();
 const express = require("express");
 const app = express();
 const http = require("http");
 const cors = require("cors");
 const { Server } = require("socket.io");
-const PORT = process.env.PORT;
+require("dotenv").config({
+    path: "./data/config.env",
+});
 
 app.use(cors());
 
@@ -37,6 +38,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(PORT , () => {
-    console.log("Listening");
+server.listen(process.env.PORT, () => {
+    console.log("Listening on port", process.env.PORT);
 });
