@@ -16,6 +16,10 @@ const io = new Server(server, {
     },
 });
 
+app.get("/",(req,res)=>{
+    res.send("HELL ITS WORKING");
+});
+
 io.on("connection", (socket) => {
     console.log("User connected : ", socket.id);
 
