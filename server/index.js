@@ -33,6 +33,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(PORT || 3001, () => {
+server.listen(PORT , () => {
     console.log("Listening");
 });
