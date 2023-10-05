@@ -3,7 +3,7 @@ import "./App.css";
 import Chat from "./Chat.js";
 import io from "socket.io-client";
 
-const socket = io.connect("https://quick-chat.adaptable.app/");
+const socket = io.connect("quickchat-production-2c39.up.railway.app");
 
 function App() {
   const [username, setUsername] = useState("");
