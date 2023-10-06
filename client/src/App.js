@@ -4,6 +4,7 @@ import Chat from "./Chat.js";
 import io from "socket.io-client";
 
 const socket = io.connect("quickchat-production-2c39.up.railway.app");
+// const socket = io.connect("http://localhost:5000/");
 
 function App() {
   const [username, setUsername] = useState("");
