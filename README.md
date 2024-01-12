@@ -1,2 +1,2 @@
-###Live Link
+### Deployed Link
 https://quickcchat.netlify.app/
